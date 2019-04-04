@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <style type="text/css">
+
+    .container {
+      padding-left: 25px;
+    }
+    
+    label {
+      display: inline-block;
+      width:100px;
+      text-align: right;
+    }
+
+  </style>
+</head>
+<body>
+  <form>
+    <div class="container">
+      <h2><b>billing/shipping information</b></h2>
+      <div>
+        <label for="order_billing_name">full name</label>
+        <input id="order_billing_name" name="order[billing_name]" type="text">
+      </div>
+      <div>
+        <label for="order_email">email</label>
+        <input id="order_email" name="order[email]" type="email">
+      </div>
+      <div>
+        <label for="order_tel">tel</label>
+        <input id="order_tel" maxlength="10"  name="order[tel]" type="text">
+      </div>
+      <div>
+        <label for="bo">address</label>
+        <input id="bo" name="order[billing_address]" type="text">
+      </div>
+      <div>
+        <label for="oba3">&nbsp;</label>
+        <input id="oba3" name="order[billing_address_2]" type="text">
+      </div>
+      <div class="input string required order_billing_city">
+        <label for="order_billing_city">city</label>
+        <input id="order_billing_city" name="order[billing_city]" type="text">
+      </div>
+      <div>
+        <label for="order_billing_zip" id="zip_label">Zipcode</label>
+        <input id="order_billing_zip" maxlength="5" name="order[billing_zip]" type="text">
+      </div>
+	   <div>
+        <label for="order_billing_state">state</label>
+        <select id="order_billing_state" name="order[billing_state]">
+        <option value="AL">AL</option>
+<option value="AK">AK</option>
+<option value="AS">AS</option>
+<option value="AZ">AZ</option>
+<option value="AR">AR</option>
+<option value="CA">CA</option>
+<option value="CO">CO</option>
+<option value="CT">CT</option>
+<option value="DE">DE</option>
+<option value="DC">DC</option>
+<option value="FM">FM</option>
+<option value="FL">FL</option>
+<option value="GA">GA</option>
+<option value="GU">GU</option>
+<option value="HI">HI</option>
+<option value="ID">ID</option>
+<option value="IL">IL</option>
+<option value="IN">IN</option>
+<option value="IA">IA</option>
+<option value="KS">KS</option>
+<option value="KY">KY</option>
+<option value="LA">LA</option>
+<option value="ME">ME</option>
+<option value="MH">MH</option>
+<option value="MD">MD</option>
+<option value="MA">MA</option>
+<option value="MI">MI</option>
+<option value="MN">MN</option>
+<option value="MS">MS</option>
+<option value="MO">MO</option>
+<option value="MT">MT</option>
+<option value="NE">NE</option>
+<option value="NV">NV</option>
+<option value="NH">NH</option>
+<option value="NJ">NJ</option>
+<option value="NM">NM</option>
+<option value="NY">NY</option>
+<option value="NC">NC</option>
+<option value="ND">ND</option>
+<option value="MP">MP</option>
+<option value="OH">OH</option>
+<option value="OK">OK</option>
+<option value="OR">OR</option>
+<option value="PW">PW</option>
+<option value="PA">PA</option>
+<option value="PR">PR</option>
+<option value="RI">RI</option>
+<option value="SC">SC</option>
+<option value="SD">SD</option>
+<option value="TN">TN</option>
+<option value="TX">TX</option>
+<option value="UT">UT</option>
+<option value="VT">VT</option>
+<option value="VI">VI</option>
+<option value="VA">VA</option>
+<option value="WA">WA</option>
+<option value="WV">WV</option>
+<option value="WI">WI</option>
+<option value="WY">WY</option>
+        </select>
+      </div>
+	  
+      <div>
+        <label for="order_billing_country">country</label>
+        <select id="order_billing_country" name="order[billing_country]">
+          <option value="USA">
+            USA
+          </option>
+          <option value="CANADA">
+         CANADA
+          </option>
+        </select>
+      </div>
+      <h2><b>credit card information</b></h2>
+      <div id="card_details">
+        <label>number</label>
+        <input id="nnaerb"  maxlength="16" name="credit_card[nlb]" type="text">(16 digits)
+        <div>
+          <label for="credit_card_month">exp. date</label>
+          <select id="credit_card_month" name="credit_card[month]">
+            <option value="01">
+              01
+            </option>
+            <option value="02">
+              02
+            </option>
+            <option value="03">
+              03
+            </option>
+            <option selected="selected" value="04">
+              04
+            </option>
+            <option value="05">
+              05
+            </option>
+            <option value="06">
+              06
+            </option>
+            <option value="07">
+              07
+            </option>
+            <option value="08">
+              08
+            </option>
+            <option value="09">
+              09
+            </option>
+            <option value="10">
+              10
+            </option>
+            <option value="11">
+              11
+            </option>
+            <option value="12">
+              12
+            </option>
+          </select>
+          <select id="credit_card_year" name="credit_card[year]">
+            <option value="2018">
+              2018
+            </option>
+            <option value="2019">
+              2019
+            </option>
+            <option value="2020">
+              2020
+            </option>
+            <option value="2021">
+              2021
+            </option>
+            <option value="2022">
+              2022
+            </option>
+            <option value="2023">
+              2023
+            </option>
+            <option value="2024">
+              2024
+            </option>
+            <option value="2025">
+              2025
+            </option>
+            <option value="2026">
+              2026
+            </option>
+            <option value="2027">
+              2027
+            </option>
+          </select>
+        </div>
+        <div>
+            <label>CVV</label>
+            <input id="orcer" maxlength="4" name="credit_card[vval]" size="4" type="text">
+        </div>
+      </div>
+      </div>
+      <br/><br/>
+      <br/>
+      <br/>
+      <br/>
+      <button style="margin-left: 75px; width: 200px; height: 40px; margin-bottom: 25px;" type="submit">Save</button>
+  </form>
+  <script src="options.js"></script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+{
+  "name": "Z Supreme autofill",
+  "version": "1.0",
+  "manifest_version": 2,
+  "description": "Extension designed autofill during checkout page ",
+  "browser_action": {
+    "default_icon": "icon.png"
+  },
+  "permissions": [
+    "activeTab",
+    "storage"
+  ],
+  "options_ui": {
+    "page": "options.html"
+  },
+  "content_scripts": [{
+      "matches": [ "http://*.supremenewyork.com/*", "https://*.supremenewyork.com/*" ],
+      "js": [ "content.js" ]
+  }]
+}
